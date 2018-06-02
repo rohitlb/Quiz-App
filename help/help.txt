@@ -1,0 +1,25 @@
+port 3333
+
+
+                        Registration
+
+reg url : http://localhost:3333/explorer/#!/User/User_create
+
+sample JSON
+{
+"role" : "admin",
+"username": "Rohit",
+"email" : "test@gmail.com",
+"password" : "alpha@123",
+"number" : "9876543210"
+}
+
+                        LOGIN
+
+login URL : http://localhost:3333/explorer/#!/User/User_login
+
+sample JSON
+{
+"email" : "test@gmail.com",
+"password" : "alpha@123"
+}
