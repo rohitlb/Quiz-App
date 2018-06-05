@@ -1,0 +1,42 @@
+{
+  "name": "quiz",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "question_id": {
+      "type": "number",
+      "required": true
+    },
+    "start_date": {
+      "type": "date",
+      "required": true
+    },
+    "end_date": {
+      "type": "date",
+      "required": true
+    },
+    "category_id": {
+      "type": "number",
+      "required": true
+    },
+    "admin_id": {
+      "type": "number",
+      "required": true
+    },
+    "result_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
