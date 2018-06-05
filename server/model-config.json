@@ -58,5 +58,13 @@
   "correct_answer": {
     "dataSource": "db",
     "public": true
+  },
+  "question": {
+    "dataSource": "db",
+    "public": true
+  },
+  "result": {
+    "dataSource": "db",
+    "public": true
   }
 }
