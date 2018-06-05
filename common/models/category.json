@@ -1,0 +1,30 @@
+{
+  "name": "category",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "quiz_competitions": {
+      "type": "string",
+      "required": true
+    },
+    "admin_id": {
+      "type": "number",
+      "required": true
+    },
+    "quiz_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

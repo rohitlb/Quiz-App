@@ -1,0 +1,42 @@
+{
+  "name": "admin",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "type": "number",
+      "required": true
+    },
+    "category_id": {
+      "type": "number",
+      "required": true
+    },
+    "quiz_id": {
+      "type": "number",
+      "required": true
+    },
+    "ca_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
