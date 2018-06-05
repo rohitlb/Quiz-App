@@ -50,5 +50,13 @@
   "quiz": {
     "dataSource": "db",
     "public": true
+  },
+  "user_answer": {
+    "dataSource": "db",
+    "public": true
+  },
+  "correct_answer": {
+    "dataSource": "db",
+    "public": true
   }
 }
