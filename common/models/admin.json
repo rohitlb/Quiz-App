@@ -21,22 +21,35 @@
     "number": {
       "type": "number",
       "required": true
-    },
-    "category_id": {
-      "type": "number",
-      "required": true
-    },
-    "quiz_id": {
-      "type": "number",
-      "required": true
-    },
-    "ca_id": {
-      "type": "number",
-      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "categories": {
+      "type": "hasMany",
+      "model": "category",
+      "foreignKey": "adminid",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "quizzes": {
+      "type": "hasMany",
+      "model": "quiz",
+      "foreignKey": "adminid",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "answers": {
+      "type": "hasMany",
+      "model": "answer",
+      "foreignKey": "adminid",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }

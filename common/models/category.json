@@ -10,21 +10,42 @@
       "type": "string",
       "required": true
     },
-    "quiz_competitions": {
-      "type": "string",
-      "required": true
-    },
-    "admin_id": {
+    "studentid": {
       "type": "number",
       "required": true
     },
-    "quiz_id": {
+    "adminid": {
       "type": "number",
       "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "admin": {
+      "type": "belongsTo",
+      "model": "admin",
+      "foreignKey": "adminid",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "student": {
+      "type": "belongsTo",
+      "model": "student",
+      "foreignKey": "studentid",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "quizzes": {
+      "type": "hasMany",
+      "model": "quiz",
+      "foreignKey": "categoryid",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }

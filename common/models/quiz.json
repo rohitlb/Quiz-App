@@ -10,33 +10,70 @@
       "type": "string",
       "required": true
     },
-    "question_id": {
-      "type": "number",
-      "required": true
-    },
-    "start_date": {
+    "startdate": {
       "type": "date",
       "required": true
     },
-    "end_date": {
+    "enddate": {
       "type": "date",
       "required": true
     },
-    "category_id": {
+    "categoryid": {
       "type": "number",
       "required": true
     },
-    "admin_id": {
+    "adminid": {
       "type": "number",
       "required": true
     },
-    "result_id": {
+    "studentid": {
       "type": "number",
       "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "admin": {
+      "type": "belongsTo",
+      "model": "admin",
+      "foreignKey": "adminid",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "category": {
+      "type": "belongsTo",
+      "model": "category",
+      "foreignKey": "categoryid",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "student": {
+      "type": "belongsTo",
+      "model": "student",
+      "foreignKey": "studentid",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "questions": {
+      "type": "hasMany",
+      "model": "question",
+      "foreignKey": "quizid",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "results": {
+      "type": "hasOne",
+      "model": "result",
+      "foreignKey": "quizid",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }

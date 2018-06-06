@@ -1,34 +1,38 @@
 {
-  "name": "result",
+  "name": "answer",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "quizid": {
+    "option": {
+      "type": "string",
+      "required": true
+    },
+    "questionid": {
       "type": "number",
       "required": true
     },
-    "studentid": {
+    "adminid": {
       "type": "number",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "quiz": {
+    "question": {
       "type": "belongsTo",
-      "model": "quiz",
-      "foreignKey": "quizid",
+      "model": "question",
+      "foreignKey": "questionid",
       "options": {
         "nestRemoting": true
       }
     },
-    "student": {
+    "admin": {
       "type": "belongsTo",
-      "model": "student",
-      "foreignKey": "studentid",
+      "model": "admin",
+      "foreignKey": "adminid",
       "options": {
         "nestRemoting": true
       }

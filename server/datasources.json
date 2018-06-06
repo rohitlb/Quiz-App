@@ -3,7 +3,7 @@
     "host": "localhost",
     "port": 27017,
     "url": "",
-    "database": "Quiz-App",
+    "database": "quiz",
     "password": "",
     "name": "db",
     "user": "",

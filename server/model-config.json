@@ -39,11 +39,11 @@
     "dataSource": "db",
     "public": true
   },
-  "admin": {
+  "category": {
     "dataSource": "db",
     "public": true
   },
-  "category": {
+  "admin": {
     "dataSource": "db",
     "public": true
   },
@@ -51,15 +51,15 @@
     "dataSource": "db",
     "public": true
   },
-  "user_answer": {
-    "dataSource": "db",
-    "public": true
-  },
-  "correct_answer": {
-    "dataSource": "db",
-    "public": true
-  },
   "question": {
+    "dataSource": "db",
+    "public": true
+  },
+  "answer": {
+    "dataSource": "db",
+    "public": true
+  },
+  "uanswer": {
     "dataSource": "db",
     "public": true
   },

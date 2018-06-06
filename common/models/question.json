@@ -6,10 +6,6 @@
     "validateUpsert": true
   },
   "properties": {
-    "category_id": {
-      "type": "number",
-      "required": true
-    },
     "text": {
       "type": "string",
       "required": true
@@ -19,10 +15,39 @@
         "string"
       ],
       "required": true
+    },
+    "quizid": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "quiz": {
+      "type": "belongsTo",
+      "model": "quiz",
+      "foreignKey": "quizid",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "answer": {
+      "type": "hasOne",
+      "model": "answer",
+      "foreignKey": "questionid",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "uanswers": {
+      "type": "hasOne",
+      "model": "uanswer",
+      "foreignKey": "questionid",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
