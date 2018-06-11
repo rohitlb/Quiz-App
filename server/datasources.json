@@ -1,12 +1,10 @@
 {
+
   "db": {
-    "host": "localhost",
-    "port": 27017,
-    "url": "",
-    "database": "quiz",
-    "password": "",
-    "name": "db",
-    "user": "",
-    "connector": "mongodb"
+    "connector": "loopback-connector-mongodb",
+    "url": "mongodb://quizapp:Annie@2013@ds153460.mlab.com:53460/quizapp"
   }
+
+
 }
+
