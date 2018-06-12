@@ -21,38 +21,14 @@
     "categoryid": {
       "type": "number",
       "required": true
-    },
-    "adminid": {
-      "type": "number",
-      "required": true
-    },
-    "studentid": {
-      "type": "number",
-      "required": true
     }
   },
   "validations": [],
   "relations": {
-    "admin": {
-      "type": "belongsTo",
-      "model": "admin",
-      "foreignKey": "adminid",
-      "options": {
-        "nestRemoting": true
-      }
-    },
     "category": {
       "type": "belongsTo",
       "model": "category",
       "foreignKey": "categoryid",
-      "options": {
-        "nestRemoting": true
-      }
-    },
-    "student": {
-      "type": "belongsTo",
-      "model": "student",
-      "foreignKey": "studentid",
       "options": {
         "nestRemoting": true
       }

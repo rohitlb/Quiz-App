@@ -10,7 +10,15 @@
       "type": "number",
       "required": true
     },
-    "studentid": {
+    "userid": {
+      "type": "number",
+      "required": true
+    },
+    "correct_answers": {
+      "type": "number",
+      "required": true
+    },
+    "wrong_answers": {
       "type": "number",
       "required": true
     }
@@ -25,10 +33,10 @@
         "nestRemoting": true
       }
     },
-    "student": {
+    "user": {
       "type": "belongsTo",
-      "model": "student",
-      "foreignKey": "studentid",
+      "model": "user",
+      "foreignKey": "userid",
       "options": {
         "nestRemoting": true
       }

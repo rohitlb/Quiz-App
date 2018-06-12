@@ -10,29 +10,17 @@
       "type": "string",
       "required": true
     },
-    "studentid": {
-      "type": "number",
-      "required": true
-    },
-    "adminid": {
+    "userid": {
       "type": "number",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "admin": {
+    "user": {
       "type": "belongsTo",
-      "model": "admin",
-      "foreignKey": "adminid",
-      "options": {
-        "nestRemoting": true
-      }
-    },
-    "student": {
-      "type": "belongsTo",
-      "model": "student",
-      "foreignKey": "studentid",
+      "model": "user",
+      "foreignKey": "userid",
       "options": {
         "nestRemoting": true
       }

@@ -21,18 +21,18 @@
   },
   "validations": [],
   "relations": {
-    "student": {
-      "type": "belongsTo",
-      "model": "student",
-      "foreignKey": "studentid",
-      "options": {
-        "nestRemoting": true
-      }
-    },
     "question": {
       "type": "belongsTo",
       "model": "question",
       "foreignKey": "questionid",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "studentid",
       "options": {
         "nestRemoting": true
       }

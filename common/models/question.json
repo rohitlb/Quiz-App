@@ -19,6 +19,10 @@
     "quizid": {
       "type": "number",
       "required": true
+    },
+    "approved": {
+      "type": "boolean",
+      "required": true
     }
   },
   "validations": [],
@@ -27,14 +31,6 @@
       "type": "belongsTo",
       "model": "quiz",
       "foreignKey": "quizid",
-      "options": {
-        "nestRemoting": true
-      }
-    },
-    "answer": {
-      "type": "hasOne",
-      "model": "answer",
-      "foreignKey": "questionid",
       "options": {
         "nestRemoting": true
       }
