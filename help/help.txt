@@ -11,7 +11,7 @@ sample JSON
 "username": "Rohit",
 "email" : "test@gmail.com",
 "password" : "alpha@123",
-"number" : "9876543210"
+"number" : 9876543210
 }
 
                         LOGIN
