@@ -11,11 +11,11 @@
       "required": true
     },
     "questionid": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "studentid": {
-      "type": "number",
+      "type": "string",
       "required": true
     }
   },

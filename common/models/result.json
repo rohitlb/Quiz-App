@@ -7,11 +7,11 @@
   },
   "properties": {
     "quizid": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "userid": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "correct_answers": {

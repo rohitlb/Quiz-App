@@ -19,7 +19,7 @@
       "required": true
     },
     "categoryid": {
-      "type": "number",
+      "type": "string",
       "required": true
     }
   },

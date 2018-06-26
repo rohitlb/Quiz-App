@@ -17,7 +17,7 @@
       "required": true
     },
     "quizid": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "approved": {
